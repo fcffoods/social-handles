@@ -8,8 +8,10 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
-        /* Base styles */
         * {
             box-sizing: border-box;
         }
@@ -50,7 +52,10 @@
         }
 
         .link {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             text-decoration: none;
             background: #ffffff;
             color: #222;
@@ -60,6 +65,10 @@
             font-weight: 600;
             transition: all 0.3s ease;
             box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        .link i {
+            font-size: 18px;
         }
 
         .link:hover {
@@ -79,6 +88,13 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
+        /* Optional icon colors */
+        .facebook i { color: #1877f2; }
+        .instagram i { color: #e1306c; }
+        .tiktok i { color: #000; }
+        .linkedin i { color: #0077b5; }
+        .website i { color: #ff6600; }
     </style>
 </head>
 <body>
@@ -87,11 +103,25 @@
     <h1>Connect With Us</h1>
     <p>Stay connected with First Choice Foods on our official platforms</p>
 
-    <a href="https://www.facebook.com/fcffoods1" class="link" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com/fcffoodsofficial/" class="link" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@fcffoods" class="link" target="_blank">TikTok</a>
-    <a href="https://linkedin.com/company/first-choice-foods-pvt-ltd" class="link" target="_blank">LinkedIn</a>
-    <a href="https://www.fcffoods.com" class="link" target="_blank">Visit Our Website</a>
+    <a href="https://www.facebook.com/fcffoods1" class="link facebook" target="_blank">
+        <i class="fab fa-facebook-f"></i> Facebook
+    </a>
+
+    <a href="https://www.instagram.com/fcffoodsofficial/" class="link instagram" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+    </a>
+
+    <a href="https://www.tiktok.com/@fcffoods" class="link tiktok" target="_blank">
+        <i class="fab fa-tiktok"></i> TikTok
+    </a>
+
+    <a href="https://linkedin.com/company/first-choice-foods-pvt-ltd" class="link linkedin" target="_blank">
+        <i class="fab fa-linkedin-in"></i> LinkedIn
+    </a>
+
+    <a href="https://www.fcffoods.com" class="link website" target="_blank">
+        <i class="fas fa-globe"></i> Visit Our Website
+    </a>
 
     <footer>© 2026 First Choice Foods Pvt. Ltd. | All Rights Reserved</footer>
 </div>
