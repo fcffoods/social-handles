@@ -2,94 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Connect With Us | First Choice Foods Pvt. Ltd.</title>
+    <title>Connect With Us | First Choice Foods</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome for Social Icons -->
+    <!-- Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
         * {
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            height: 100vh;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 100vh;
             color: #fff;
         }
-
         .container {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            padding: 40px 30px;
-            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(18px);
+            padding: 40px 25px;
+            border-radius: 18px;
             width: 90%;
             max-width: 420px;
             text-align: center;
-            box-shadow: 0 8px 35px rgba(0,0,0,0.35);
-            animation: fadeIn 1.2s ease;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+            animation: fadeIn 1s ease-out;
         }
-
+        img.logo {
+            width: 140px;
+            margin-bottom: 18px;
+        }
         h1 {
-            font-weight: 600;
-            font-size: 1.8rem;
-            margin-bottom: 8px;
+            font-size: 1.9rem;
+            margin: 8px 0;
+            font-weight: 700;
         }
-
         p {
             font-size: 14px;
-            color: #ddd;
-            margin-bottom: 28px;
+            color: #e7e7e7;
+            margin-bottom: 25px;
         }
-
         .link {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
             text-decoration: none;
-            background: #ffffff;
+            background: #fff;
             color: #222;
-            padding: 14px 0;
-            margin: 10px 0;
+            padding: 13px 0;
+            margin: 9px 0;
             border-radius: 12px;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: 0.3s ease;
             box-shadow: 0 3px 10px rgba(0,0,0,0.2);
         }
-
         .link i {
             font-size: 18px;
         }
-
         .link:hover {
-            background: #ffcc00;
+            transform: translateY(-3px) scale(1.02);
+            background: #ffdd00;
             color: #000;
-            transform: translateY(-4px) scale(1.02);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
-
         footer {
-            margin-top: 25px;
+            margin-top: 22px;
             font-size: 12px;
             color: #ccc;
         }
-
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
+            from { opacity: 0; transform: translateY(18px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
-        /* Optional icon colors */
+        /* Brand icon colors */
         .facebook i { color: #1877f2; }
         .instagram i { color: #e1306c; }
         .tiktok i { color: #000; }
@@ -100,9 +93,13 @@
 <body>
 
 <div class="container">
-    <h1>Connect With Us</h1>
-    <p>Stay connected with First Choice Foods on our official platforms</p>
+    <!-- Official Logo -->
+    <img src="https://fcffoods.com/wp-content/uploads/2024/04/FCF-FOODS-LOGO-02.svg" class="logo" alt="First Choice Foods Logo">
 
+    <h1>Connect With Us</h1>
+    <p>Follow First Choice Foods on social media and stay updated!</p>
+
+    <!-- Social Links with Icons -->
     <a href="https://www.facebook.com/fcffoods1" class="link facebook" target="_blank">
         <i class="fab fa-facebook-f"></i> Facebook
     </a>
@@ -120,7 +117,7 @@
     </a>
 
     <a href="https://www.fcffoods.com" class="link website" target="_blank">
-        <i class="fas fa-globe"></i> Visit Our Website
+        <i class="fas fa-globe"></i> Visit Website
     </a>
 
     <footer>© 2026 First Choice Foods Pvt. Ltd. | All Rights Reserved</footer>
