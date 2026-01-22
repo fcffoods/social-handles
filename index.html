@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Connect With Us</title>
+    <title>Connect With Us | First Choice Foods Pvt. Ltd.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Font -->
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
     <style>
+        /* Base styles */
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
@@ -17,66 +22,78 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            color: #fff;
         }
 
         .container {
             background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 30px;
-            border-radius: 15px;
+            backdrop-filter: blur(15px);
+            padding: 40px 30px;
+            border-radius: 20px;
             width: 90%;
-            max-width: 400px;
+            max-width: 420px;
             text-align: center;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 35px rgba(0,0,0,0.35);
+            animation: fadeIn 1.2s ease;
         }
 
         h1 {
-            color: #fff;
-            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 1.8rem;
+            margin-bottom: 8px;
         }
 
         p {
-            color: #ddd;
             font-size: 14px;
-            margin-bottom: 25px;
+            color: #ddd;
+            margin-bottom: 28px;
         }
 
         .link {
             display: block;
             text-decoration: none;
             background: #ffffff;
-            color: #333;
-            padding: 15px;
-            margin: 12px 0;
-            border-radius: 10px;
+            color: #222;
+            padding: 14px 0;
+            margin: 10px 0;
+            border-radius: 12px;
             font-weight: 600;
             transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
         }
 
         .link:hover {
             background: #ffcc00;
-            transform: translateY(-3px);
+            color: #000;
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
 
         footer {
-            margin-top: 20px;
+            margin-top: 25px;
             font-size: 12px;
             color: #ccc;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Follow Us</h1>
-    <p>Stay connected with us on social media</p>
+    <h1>Connect With Us</h1>
+    <p>Stay connected with First Choice Foods on our official platforms</p>
 
-    <a href="https://www.facebook.com/YOUR_PAGE" class="link" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com/YOUR_PAGE" class="link" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@YOUR_PAGE" class="link" target="_blank">TikTok</a>
-    <a href="https://www.yourwebsite.com" class="link" target="_blank">Visit Our Website</a>
+    <a href="https://www.facebook.com/fcffoods1" class="link" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/fcffoodsofficial/" class="link" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@fcffoods" class="link" target="_blank">TikTok</a>
+    <a href="https://linkedin.com/company/first-choice-foods-pvt-ltd" class="link" target="_blank">LinkedIn</a>
+    <a href="https://www.fcffoods.com" class="link" target="_blank">Visit Our Website</a>
 
-    <footer>© 2026 Your Company Name</footer>
+    <footer>© 2026 First Choice Foods Pvt. Ltd. | All Rights Reserved</footer>
 </div>
 
 </body>
